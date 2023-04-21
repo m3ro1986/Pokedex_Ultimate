@@ -1,0 +1,61 @@
+.loginBack {
+    height: 100vh;
+    background-image: url(/public/2.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    backdrop-filter: blur(3px);
+}
+
+.pokedex {
+    position: relative;
+    height: 525px;
+    width: 350px;
+    background-image: url(/public/pokedex.jpg);
+    border-radius: 13px;
+}
+
+.pokedex > span {
+    position: absolute;
+    height: 49px;
+    width: 49px;
+    background-color: black;
+    top: 14px;
+    left: 37px;
+    border-radius: 50%;
+}
+
+.pokedex > figure {
+    position: absolute;
+    height: 50px;
+    width: 178px;
+    background-color: #FF3334;
+    background-image: url(/public/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 31px;
+    right: 5px;
+    border-radius: 15px;
+}
+
+.pokedex > p {
+    margin-top: 120px;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.pokedex > input {
+    position: absolute;
+    bottom: 110px;
+    left: 24px;
+    width: 304px;
+    height: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
