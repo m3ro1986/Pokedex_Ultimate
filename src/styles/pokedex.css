@@ -3,3 +3,15 @@
     background-color: brown;
     border-bottom: 15px solid;
 }
+
+.pokedexBack > main {
+    display: grid;
+    height: 80vh;
+    place-items: center;
+    grid-template-columns: repeat( auto-fit, minmax( 8rem, 1fr ));
+}
+
+.pokedexBack > footer {
+    height: 10vh;
+    background-color: brown;
+}
