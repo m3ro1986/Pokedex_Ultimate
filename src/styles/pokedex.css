@@ -1,0 +1,5 @@
+.pokedexBack > header {
+    height: 10vh;
+    background-color: brown;
+    border-bottom: 15px solid;
+}

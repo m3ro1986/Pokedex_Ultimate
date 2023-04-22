@@ -26,10 +26,14 @@ main {
     position: absolute;
     height: 49px;
     width: 49px;
-    background-color: black;
     top: 14px;
     left: 37px;
     border-radius: 50%;
+}
+
+.loading {
+    border: transparent;
+    animation: shine 0.5s infinite;
 }
 
 .pokedex > figure {
@@ -87,11 +91,37 @@ main {
     border-radius: 10px;
 }
 
+.controls > p {
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 0 50px;
+    text-align: center;
+    animation: scale 2s ease-out 0.5s backwards;
+}
+
+.controls > button {
+    position: absolute;
+    top: 58px;
+    left: 109px;
+    padding: 5px;
+    height: 26px;
+    border-radius: 15px;
+}
+
+
 @keyframes scale {
     from {
         transform: scale(0);
     } to {
         transform: scale(1);
+    }
+}
+
+@keyframes shine {
+    from {
+        background-color: black;
+    } to {
+        background-color: transparent;
     }
 }
 

@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 export const trainerNameSlice = createSlice({
     name: 'trainerName',
-    initialState: 'Mero',
+    initialState: '',
     reducers: {
         getTrainerName: (state, action) => {
             const trainerName = action.payload;
