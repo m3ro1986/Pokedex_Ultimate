@@ -19,6 +19,7 @@ main {
     width: 350px;
     background-image: url(/public/pokedex.jpg);
     border-radius: 13px;
+    animation: scale 2s ease-out;
 }
 
 .pokedex > span {
@@ -50,6 +51,22 @@ main {
     text-align: center;
 }
 
+.pokedex > img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 190px;
+    left: 99px;
+    animation: scale 2s ease-out 0.5s backwards;
+}
+
+.pokedex > h6 {
+    position: absolute;
+    top: 353px;
+    width: 350px;
+    text-align: center;
+}
+
 .pokedex > input {
     position: absolute;
     bottom: 110px;
@@ -59,3 +76,24 @@ main {
     border-radius: 10px;
     text-align: center;
 }
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 22px;
+    width: 308px;
+    height: 87px;
+    background-color: #636262;
+    border-radius: 10px;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+
+
+

@@ -9,7 +9,7 @@ function App() {
 		<HashRouter>
 			<Routes>
 				<Route path='/' element={ <Login /> }/>
-				<Route element={<ProtectedRoutes />}>
+				<Route element={ <ProtectedRoutes /> }>
 
 				</Route>
 			</Routes>
