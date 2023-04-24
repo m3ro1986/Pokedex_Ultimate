@@ -7,7 +7,11 @@
     text-align: center;
 }
 
-.pokedexBack > span {
+.pokedexBack > header > span {
+    display: inline;
+}
+
+.pokedexBack > div {
     position: absolute;
     width: 8vh;
     height: 8vh;

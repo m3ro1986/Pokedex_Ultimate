@@ -7,16 +7,22 @@ import { useSelector } from 'react-redux';
 const Pokedex = () => {
     const trainerName = useSelector( state => state.trainerName );
     const [pokemons, setPokemons] = useState([]);
+    const [limit, setLimit] = useState(40);
+    const [offset, setOffset] = useState(0);
 
     useEffect(() => {
-        axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=60&offset=0`)
+        axios.get(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}&offset=${offset}`)
             .then(res => setPokemons(res.data.results))
     }, [])
 
     return (
         <div className='pokedexBack'>
-            <header>Welcome { trainerName }, here you can find your favorite POKEMON!</header>
-            <span></span>
+            <header>
+                <p>
+                   Welcome <span style={{color: 'white '}}>{ trainerName }</span>, here you can find your favorite POKEMON! 
+                </p> 
+            </header>
+            <div></div>
             <main>
                 <div className='pokemonList'>
                     {
