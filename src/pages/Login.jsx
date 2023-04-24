@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/login.css';
 import axios from 'axios';
-import MessageToTrainer from '../components/messageToTrainer';
+import MessageToTrainer from '../components/MessageToTrainer';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getTrainerName } from '../store/slices/trainerNameSlice';
