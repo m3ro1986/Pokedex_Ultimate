@@ -13,6 +13,8 @@
 
 .pokedexBack > div {
     position: absolute;
+    display: grid;
+    place-items: center;
     width: 8vh;
     height: 8vh;
     background-color: white;
