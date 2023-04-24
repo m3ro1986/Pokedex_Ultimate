@@ -15,6 +15,14 @@ const Pokedex = () => {
             .then(res => setPokemons(res.data.results))
     }, [limit, offset])
 
+    const changeOffset = (change) => {
+        if (change === 'next') {
+            setOffset( offset + limit )
+        } else {
+            offset !== 0 ? setOffset( offset - limit ) : alert('this is the first page');
+        }
+    }
+
     return (
         <div className='pokedexBack'>
             <header>
@@ -36,9 +44,9 @@ const Pokedex = () => {
             </main>
             <footer>
                 <div>
-                    <i class='bx bx-chevron-left'></i>
+                    <i class='bx bx-chevron-left' onClick={ () => changeOffset( 'last' ) }></i>
                     <span>all pokemons</span>
-                    <i class='bx bx-chevron-right' ></i>
+                    <i class='bx bx-chevron-right' onClick={ () => changeOffset( 'next' ) }></i>
                 </div>
             </footer>
         </div>
