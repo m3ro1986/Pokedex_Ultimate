@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/pokedex.css';
 import PokeCard from '../components/PokeCard';
 import axios from 'axios';

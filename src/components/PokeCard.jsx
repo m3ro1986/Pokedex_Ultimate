@@ -1,6 +1,6 @@
 import '../styles/pokecard.css';
 import axios from "axios";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 const PokeCard = ({url}) => {
 
