@@ -11,3 +11,12 @@ button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
+
+.bx {
+  font-size: 45px;
+}
+
+.bx:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

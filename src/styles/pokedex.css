@@ -40,6 +40,15 @@
 }
 
 .pokedexBack > footer {
+    display: grid;
+    place-items: center;
     height: 5vh;
     background-color: brown;
+    color: white;
+}
+
+.pokedexBack > footer > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
