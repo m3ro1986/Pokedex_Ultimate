@@ -1,7 +1,7 @@
 .pokedexBack > header {
     display: grid;
     place-items: center;
-    height: 7vh;
+    height: 10vh;
     background-color: brown;
     border-bottom: 15px solid;
     text-align: center;
@@ -9,18 +9,18 @@
 
 .pokedexBack > span {
     position: absolute;
-    width: 7vh;
-    height: 7vh;
+    width: 8vh;
+    height: 8vh;
     background-color: white;
     border: 15px solid;
-    top: 2.5vh;
+    top: 5vh;
     right: 3.5vh;
     border-radius: 50%;
     z-index: 1;
 }
 
 .pokedexBack > main {
-    height: 88vh;
+    height: 85vh;
     display: flex;
     overflow-y: auto;
 }
