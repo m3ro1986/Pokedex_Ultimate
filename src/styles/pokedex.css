@@ -1,17 +1,41 @@
 .pokedexBack > header {
-    height: 10vh;
+    display: grid;
+    place-items: center;
+    height: 7vh;
     background-color: brown;
     border-bottom: 15px solid;
+    text-align: center;
+}
+
+.pokedexBack > span {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    background-color: white;
+    border: 15px solid;
+    top: 2.5vh;
+    right: 3.5vh;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .pokedexBack > main {
+    height: 88vh;
+    display: flex;
+    overflow-y: auto;
+}
+
+.pokemonList {
+    width: 100%;
     display: grid;
-    height: 80vh;
+    padding: 1rem;
     place-items: center;
     grid-template-columns: repeat( auto-fit, minmax( 8rem, 1fr ));
+    gap: 1rem;
+    overflow-x: hidden;
 }
 
 .pokedexBack > footer {
-    height: 10vh;
+    height: 5vh;
     background-color: brown;
 }
