@@ -13,9 +13,10 @@ const PokeCard = ({url}) => {
     return (
         <div className={`pokeCard ${ pokemon.types?.[0].type?.name }`}>
             <figure>
-                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`} alt="" />    
+                <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${pokemon.id}.gif`} alt="" />
             </figure>
             <h5>{ pokemon.name }</h5>
+            {/* <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div> */}
         </div>
     );
 };
